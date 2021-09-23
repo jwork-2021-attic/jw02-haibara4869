@@ -7,3 +7,6 @@
 	在Line类中添加参数row col以表示怪物方阵的行和列。
 	构造器Line(int row, int col)以row*col作为positions的容量开辟空间。
 	method toString()中按行输出每一帧的string。
+
+
+[![asciicast](https://asciinema.org/a/aLazENYa2zmcE8UlE1xFbyZ8I.svg)](https://asciinema.org/a/aLazENYa2zmcE8UlE1xFbyZ8I)

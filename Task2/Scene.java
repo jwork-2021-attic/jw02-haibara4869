@@ -8,7 +8,7 @@ import java.util.Random;
 public class Scene {
 
     public static void main(String[] args) throws IOException {
-        int n = 256;
+        int n = 64;
         boolean[] bool = new boolean[n];
         int randInt = 0;
         Random rand = new Random();
@@ -18,7 +18,7 @@ public class Scene {
                 randInt = rand.nextInt(n); 
                 }while(bool[randInt]);
                 bool[randInt] = true;
-                Monster monster = new Monster(i, 100, 100);
+                Monster monster = new Monster(i*4, 100, 100);
                 line.put(monster, randInt);
         }
 
