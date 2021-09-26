@@ -1,6 +1,6 @@
 package Task3;
 
-public class Line {
+public class Matrix {
 
     class Position {
 
@@ -20,7 +20,7 @@ public class Line {
     private int row,col;
     private Position[] positions;
 
-    public Line(int row, int col) {
+    public Matrix(int row, int col) {
         this.row = row;
         this.col = col;
         this.positions = new Position[row*col];

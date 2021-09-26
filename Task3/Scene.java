@@ -12,24 +12,24 @@ public class Scene {
         boolean[] bool = new boolean[n];
         int randInt = 0;
         Random rand = new Random();
-        Line line = new Line(8,8);
+        Matrix matrix = new Matrix(8,8);
         for(int i =0;i<n;i++){
             do {
                 randInt = rand.nextInt(n); 
                 }while(bool[randInt]);
                 bool[randInt] = true;
                 Monster monster = new Monster(i, 100+i, 100);
-                line.put(monster, randInt);
+                matrix.put(monster, randInt);
         }
 
 
         Snake theSnake = Snake.getTheSnake();
 
-        Sorter sorter = new QuickSorter();
+        Sorter sorter = new SelectSorter();
 
         theSnake.setSorter(sorter);
 
-        String log = theSnake.lineUp(line);
+        String log = theSnake.lineUp(matrix);
 
         BufferedWriter writer;
         writer = new BufferedWriter(new FileWriter("result.txt"));

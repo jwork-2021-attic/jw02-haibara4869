@@ -1,7 +1,7 @@
 package Task3;
 
 import java.util.ArrayList; 
-import Task3.Line.Position;
+import Task3.Matrix.Position;
 
 public class Monster implements Linable {
 

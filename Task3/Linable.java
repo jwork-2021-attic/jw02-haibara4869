@@ -1,6 +1,6 @@
 package Task3;
 
-import Task3.Line.Position;
+import Task3.Matrix.Position;
 
 public interface Linable {
 

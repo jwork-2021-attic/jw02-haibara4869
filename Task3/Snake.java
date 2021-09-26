@@ -31,7 +31,7 @@ public class Snake {
                 .swapPosition(Monster.getMonsterByRank(Integer.parseInt(couple[1])));
     }
 
-    public String lineUp(Line line) {
+    public String lineUp(Matrix line) {
 
         String log = new String();
 
